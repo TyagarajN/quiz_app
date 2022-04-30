@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Content-Script-Type" content="text/javascript">
+	
+		<head>
+			<title>AERONAUTICAL QUIZ</title>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<style>
+    .container{
+        display:flex;
+    }
+
+</style>
+<script type="text/javascript">
+
+function ValidateForm(){
+result = new Array();
+count = 0;
+ 
+if (!document.forms[0].one[3].checked) {
+result[count] = "Question 1. The correct answer is " + document.forms[0].one[3].value + ".";
+count++;
+}
+ 
+if (!document.forms[0].two[2].checked) {
+result[count] = "Question 2. The correct answer is " + document.forms[0].two[2].value + ".";
+count++;
+}
+ 
+if (!document.forms[0].three[1].checked) {
+result[count] = "Question 3. The correct answer is " + document.forms[0].three[1].value + ".";
+count++;
+}
+ 
+if (!document.forms[0].four[3].checked) {
+result[count] = "Question 4. The correct answer is " + document.forms[0].four[3].value + ".";
+count++;
+}
+
+if (!document.forms[0].five[0].checked) {
+result[count] = "Question 5. The correct answer is " + document.forms[0].five[0].value + ".";
+count++;
+}
+
+if (!document.forms[0].six[3].checked) {
+result[count] = "Question 6. The correct answer is " + document.forms[0].six[3].value + ".";
+count++;
+}
+
+
+if (!document.forms[0].seven[3].checked) {
+result[count] = "Question 7. The correct answer is " + document.forms[0].seven[3].value + ".";
+count++;
+}
+
+
+if (!document.forms[0].eight[2].checked) {
+result[count] = "Question 8. The correct answer is " + document.forms[0].eight[2].value + ".";
+count++;
+}
+
+
+if (!document.forms[0].nine[0].checked) {
+result[count] = "Question 9 . The correct answer is " + document.forms[0].nine[0].value + ".";
+count++;
+}
+
+if (!document.forms[0].ten[3].checked) {
+result[count] = "Question 10 . The correct answer is " + document.forms[0].ten[3].value + ".";
+count++;
+}
+
+var correct;
+var c=document.getElementById("count");
+correct=10-count;
+c.innerHTML += correct;
+if (result.length > 0) {
+var vString = "";
+for (var i=0; i<result.length; i++) {
+vString = vString + result[i] + "\n";
+}
+alert(result.length + " incorrect answers:\n" + vString);
+return(false);
+}
+else {
+alert("All of the questions were answered correctly so submit email notice.");
+return(true);
+}
+
+}
+
+</script>
+        </head>
+<body>
+    <!-- NAVBAR-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	<div class="container-fluid">
+			  <a class="navbar-brand" href="#1">QUIZ</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			<div class="collapse navbar-collapse" id="mynavbar">
+				<ul class="navbar-nav me-auto">
+				  <li class="nav-item">
+					<a class="nav-link" href="homepage.html">Homepage</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="login.html">Login</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Signup.html">Registration</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contactus.html">Contact-Us</a>
+				  </li>
+				</ul>
+				<form class="d-flex">
+				  <input class="form-control me-2" type="text" placeholder="Search">
+				  <button class="btn btn-primary" type="button">Search</button>
+			    </form>
+	        </div>
+    </div>
+</nav>
+<form>
+<div style="text-align: center;">
+<strong>AERONAUTICAL Quiz</strong>
+</div>
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 1: Cylinders in small aircraft engines are most often arranged ...
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="one" value="Like an L configuration"><p class="mt-3 p-3">Like an "L" configuration</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="one" value="In a X configuration"><p class="mt-3 p-3">In a "X" configuration</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="one" value="In a T configuration"><p class="mt-3 p-3">In a "T" configuration</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="one" value="In a horizontally opposite configuration" checked><p class="mt-3 p-3">In a horizontally opposite configuration</p>
+        </div>
+    </span>
+
+</div>
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 2:When fossil fuels are used to create thrust, it is...
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="two" value="Converting mechanical energy into chemical energy"><p class="mt-3 p-3">Converting mechanical energy into chemical energy</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="two" value="Bernoulli's Principle" ><p class="mt-3 p-3">Bernoulli's Principle</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="two" value="Converting chemical energy into mechanical energy"><p class="mt-3 p-3">Converting chemical energy into mechanical energy</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="two" value="Newtons first law" ><p class="mt-3 p-3"checked>Newtons first law</p>
+        </div>
+    </span>
+
+</div>
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 3: What engine component uses Bernoulli's Principle?
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="three" value="An alternator"><p class="mt-3 p-3">An alternator</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="three" value="A carburetor"checked><p class="mt-3 p-3">A carburetor</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="three" value="A magneto"><p class="mt-3 p-3"> A magneto</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="three" value="A piston" ><p class="mt-3 p-3">A piston</p>
+        </div>
+    </span>
+
+</div>
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 4: What instrument uses the principle of a gyroscope for operation? ?
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="four" value="An altimeter"><p class="mt-3 p-3">An altimeter</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="four" value="An altitude indicator"><p class="mt-3 p-3">An altitude indicator</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="four" value="An heading indicator"><p class="mt-3 p-3">An heading indicator</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="four" value="Both A and C"checked><p class="mt-3 p-3">Both A and C</p>
+        </div>
+    </span>
+
+</div>
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 5: Under standard conditions, a parcel of air, one square inch and 50 miles tall weighs... 
+    </div>
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="five" value="29.92 pounds"><p class="mt-3 p-3">29.92 pounds</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="five" value="1013.2 grams"><p class="mt-3 p-3">1013.2 grams</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="five" value="14.7 pounds"><p class="mt-3 p-3">14.7 pounds</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="five" value="None of the above"checked ><p class="mt-3 p-3">None of the above</p>
+        </div>
+    </span>
+
+</div>
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 6:In a flight profile, what phase is reached when the pilot levels off at the desired altitude. 
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="six" value="Decent"><p class="mt-3 p-3">Decent</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="six" value="Approach"><p class="mt-3 p-3">Approach</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="six" value="Departure"><p class="mt-3 p-3">Departure</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="six" value="Cruise" checked><p class="mt-3 p-3">Cruise</p>
+        </div>
+    </span>
+
+</div>
+
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 7: The VFR weather minimums for class C airspace are... 
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="seven" value="500 below the clouds"><p class="mt-3 p-3">500 below the clouds</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="seven" value="1000 above the clouds"><p class="mt-3 p-3">1000 above the clouds</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="seven" value="2000 horizontally from any cloud"><p class="mt-3 p-3">2000' horizontally from any cloud</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="seven" value="All of the above" checked><p class="mt-3 p-3">All of the above</p>
+        </div>
+    </span>
+
+</div>
+
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 8: When approaching a precision runway, the pilot sees 8 stripes at the beginning of the runway. What do these stripes tell the pilot? 
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="eight" value="The runway is 8000 long"><p class="mt-3 p-3">The runway is 8000 long</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="eight" value="The runway is closed"><p class="mt-3 p-3">The runway is closed</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="eight" value="These are the threshold marking of a precision runway"checked><p class="mt-3 p-3">These are the threshold marking of a precision runway</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="eight" value="A portion of the runway is unusable" ><p class="mt-3 p-3">A portion of the runway is unusable</p>
+        </div>
+    </span>
+
+</div>
+
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 9: Which wind direction indicator shows where the wind is from?
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="nine" value="Wind Sock" checked><p class="mt-3 p-3">Wind Sock</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="nine" value="Tetrahedron"><p class="mt-3 p-3">Tetrahedron</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="nine" value="Wind tee"><p class="mt-3 p-3">Wind tee</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="nine" value="Segmented circle" ><p class="mt-3 p-3">Segmented circle</p>
+        </div>
+    </span>
+
+</div>
+
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 10: If the airport beacon is flashing one white, one green, one yellow, it is a... 
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="ten" value="Water airport"><p class="mt-3 p-3">Water airport</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="ten" value="Civilian airport"><p class="mt-3 p-3">Civilian airport</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="ten" value="Military airport"><p class="mt-3 p-3">Military airport</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="ten" value="Helicopter Airport" checked><p class="mt-3 p-3">Helicopter Airport</p>
+        </div>
+    </span>
+
+</div>
+
+<p id="count">..</p>
+<p style="text-align: center;">
+<input type="button" name="btn1" value="Execute" onClick="ValidateForm()">
+</p>
+
+
+</form>
+</body>
+</html>

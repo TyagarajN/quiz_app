@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Content-Script-Type" content="text/javascript">
+	
+		<head>
+			<title>Homepage</title>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<style>
+    .container{
+        display:flex;
+    }
+
+</style>
+
+<title>Sample Quiz</title>
+<script type="text/javascript">
+ 
+function ValidateForm(){
+result = new Array();
+count = 0;
+if (!document.forms[0].one[2].checked) {
+result[count] = "Question 1. The correct answer is " + document.forms[0].one[2].value + ".";
+count++;
+}
+ 
+if (!document.forms[0].two[1].checked) {
+result[count] = "Question 2. The correct answer is " + document.forms[0].two[1].value + ".";
+count++;
+}
+ 
+if (!document.forms[0].three[0].checked) {
+result[count] = "Question 3. The correct answer is " + document.forms[0].three[0].value + ".";
+count++;
+}
+ 
+if (!document.forms[0].four[3].checked) {
+result[count] = "Question 4. The correct answer is " + document.forms[0].four[3].value + ".";
+count++;
+}
+var correct;
+var c=document.getElementById("count");
+correct=4-count;
+c.innerHTML += correct;
+if (result.length > 0) {
+var vString = "";
+for (var i=0; i<result.length; i++) {
+vString = vString + result[i] + "\n";
+}
+alert(result.length + " incorrect answers:\n" + vString);
+return(false);
+}
+else {
+alert("All of the questions were answered correctly so submit email notice.");
+return(true);
+}
+
+
+}
+</script>
+ 
+</body>
+<form>
+<div style="text-align: center;">
+<strong>Sample Quiz</strong>
+</div>
+ 
+<p>
+Question 1: Who made the first Aircraft?
+<br>
+<input type="radio" name="one" value="The Orwell Brothers">The Orwell Brothers
+<input type="radio" name="one" value="The Bright Brothers">The Bright Brothers
+<input type="radio" name="one" value="The Wright Brothers" checked>The Wright Brothers
+<input type="radio" name="one" value="Jones Brothers">Jones Brothers
+</p>
+ 
+<p>
+Question 2: In what state is New York City located?
+<br>
+<input type="radio" name="two" value="Maryland">Maryland
+<input type="radio" name="two" value="New York" checked>New York
+<input type="radio" name="two" value="Virginia">Virginia
+<input type="radio" name="two" value="California">California
+</p>
+<p>
+Question 3: Who was the first president of the United States?
+<br>
+<input type="radio" name="three" value="George Washington" checked>George Washington
+<input type="radio" name="three" value="Dick Nixon">Dick Nixon
+<input type="radio" name="three" value="Abe Lincoln">Abe Lincoln
+<input type="radio" name="three" value="Theodore Roosevelt">Theodore Roosevelt
+</p>
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 4: Who wrote the story, "The Gold Bug"?
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="four" value="Tom Clancy"><p class="mt-3 p-3">Tom Clancy</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="four" value="Mark Twain"><p class="mt-3 p-3">Mark Twain</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="four" value="Charles Dickens"><p class="mt-3 p-3">Charles Dickens</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="four" value="Edgar Allan Poe" checked><p class="mt-3 p-3">Edgar Allan Poe</p>
+        </div>
+    </span>
+
+</div>
+<p id="count">..</p>
+<p style="text-align: center;">
+<input type="button" name="btn1" value="Execute" onClick="ValidateForm()">
+</p>
+
+
+</form>
+</body>
+</html>
