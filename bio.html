@@ -22,17 +22,17 @@ function ValidateForm(){
 result = new Array();
 count = 0;
  
-if (!document.forms[0].one[3].checked) {
-result[count] = "Question 1. The correct answer is " + document.forms[0].one[3].value + ".";
+if (!document.forms[0].one[1].checked) {
+result[count] = "Question 1. The correct answer is " + document.forms[0].one[1].value + ".";
 count++;
 }
  
-if (!document.forms[0].two[2].checked) {
-result[count] = "Question 2. The correct answer is " + document.forms[0].two[2].value + ".";
+if (!document.forms[0].two[0].checked) {
+result[count] = "Question 2. The correct answer is " + document.forms[0].two[0].value + ".";
 count++;
 }
  
-if (!document.forms[0].three[1].checked) {
+if (!document.forms[0].three[3].checked) {
 result[count] = "Question 3. The correct answer is " + document.forms[0].three[1].value + ".";
 count++;
 }
@@ -65,13 +65,13 @@ count++;
 }
 
 
-if (!document.forms[0].nine[0].checked) {
-result[count] = "Question 9 . The correct answer is " + document.forms[0].nine[0].value + ".";
+if (!document.forms[0].nine[2].checked) {
+result[count] = "Question 9 . The correct answer is " + document.forms[0].nine[2].value + ".";
 count++;
 }
 
-if (!document.forms[0].ten[3].checked) {
-result[count] = "Question 10 . The correct answer is " + document.forms[0].ten[3].value + ".";
+if (!document.forms[0].ten[2].checked) {
+result[count] = "Question 10 . The correct answer is " + document.forms[0].ten[2].value + ".";
 count++;
 }
 
@@ -105,31 +105,32 @@ return(true);
 
 <div class="card mt-3 p-5">
     <div class="card-title">
-        Question 1: Cylinders in small aircraft engines are most often arranged ...
+        Question 1:	
+        Pine, fir, spruce, cedar, larch and cypress are the famous timber-yielding plants of which several also occur widely in the hilly regions of India. All these belong to
     </div>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="one" value="Like an L configuration"><p class="mt-3 p-3">Like an "L" configuration</p>
+            <input class="form-check-input my-auto" type="radio" name="one" value="Angiosperms"><p class="mt-3 p-3">Angiosperms</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="one" value="In a X configuration"><p class="mt-3 p-3">In a "X" configuration</p>
+            <input class="form-check-input my-auto"  type="radio" name="one" value="gymnosperms"><p class="mt-3 p-3">gymnosperms</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="one" value="In a T configuration"><p class="mt-3 p-3">In a "T" configuration</p>
+            <input class="form-check-input my-auto" type="radio" name="one" value="monocotyledons"><p class="mt-3 p-3">monocotyledons</p>
         </div>
     </span>
 
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="one" value="In a horizontally opposite configuration" ><p class="mt-3 p-3">In a horizontally opposite configuration</p>
+            <input class="form-check-input my-auto" type="radio" name="one" value="dicotyledons" ><p class="mt-3 p-3">dicotyledons</p>
         </div>
     </span>
 
@@ -137,125 +138,62 @@ return(true);
 
 <div class="card mt-3 p-5">
     <div class="card-title">
-        Question 2:When fossil fuels are used to create thrust, it is...
+        Question 2:	Pollination is best defined as
     </div>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="two" value="Converting mechanical energy into chemical energy"><p class="mt-3 p-3">Converting mechanical energy into chemical energy</p>
+            <input class="form-check-input my-auto" type="radio" name="two" value="transfer of pollen from anther to stigma"><p class="mt-3 p-3">transfer of pollen from anther to stigma</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="two" value="Bernoulli's Principle"><p class="mt-3 p-3">Bernoulli's Principle</p>
+            <input class="form-check-input my-auto"  type="radio" name="two" value="Germination of pollen"><p class="mt-3 p-3">Germination of pollen</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="two" value="Converting chemical energy into mechanical energy"><p class="mt-3 p-3">Converting chemical energy into mechanical energy</p>
+            <input class="form-check-input my-auto" type="radio" name="two" value="growth of pollen tube in ovule"><p class="mt-3 p-3">growth of pollen tube in ovule</p>
         </div>
     </span>
 
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="two" value="Newtons first law" checked><p class="mt-3 p-3">Newtons first law</p>
+            <input class="form-check-input my-auto" type="radio" name="two" value="visting flowers by insects" checked><p class="mt-3 p-3">visting flowers by insects</p>
         </div>
     </span>
 
 </div>
 <div class="card mt-3 p-5">
     <div class="card-title">
-        Question 3: What engine component uses Bernoulli's Principle?
+        Question 3:Plants recieve their nutrients mainly from
     </div>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="three" value="An alternator"><p class="mt-3 p-3">An alternator</p>
+            <input class="form-check-input my-auto" type="radio" name="three" value="chlorophyll"><p class="mt-3 p-3">chlorophyll</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="three" value="A carburetor"><p class="mt-3 p-3">A carburetor</p>
+            <input class="form-check-input my-auto"  type="radio" name="three" value="Atmosphere"><p class="mt-3 p-3">Atmosphere</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="three" value="A magneto"><p class="mt-3 p-3"> A magneto</p>
-        </div>
-    </span>
-
-
-    <span class="card mt-3 p-6">
-        <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="three" value="A piston" checked><p class="mt-3 p-3">A piston</p>
-        </div>
-    </span>
-
-</div>
-
-<div class="card mt-3 p-5">
-    <div class="card-title">
-        Question 4: What instrument uses the principle of a gyroscope for operation? ?
-    </div>
-
-    <span class="card mt-3 p-6">
-        <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="four" value="An altimeter"><p class="mt-3 p-3">An altimeter</p>
-        </div>
-    </span>
-
-    <span class="card mt-3 p-6">
-        <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="four" value="An altitude indicator"><p class="mt-3 p-3">An altitude indicator</p>
-        </div>
-    </span>
-
-    <span class="card mt-3 p-6">
-        <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="four" value="An heading indicator"><p class="mt-3 p-3">An heading indicator</p>
+            <input class="form-check-input my-auto" type="radio" name="three" value="light"><p class="mt-3 p-3"> light</p>
         </div>
     </span>
 
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="four" value="Both A and C" checked><p class="mt-3 p-3">Both A and C</p>
-        </div>
-    </span>
-
-</div>
-<div class="card mt-3 p-5">
-    <div class="card-title">
-        Question 5: Under standard conditions, a parcel of air, one square inch and 50 miles tall weighs... 
-    </div>
-
-    <span class="card mt-3 p-6">
-        <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="five" value="29.92 pounds"><p class="mt-3 p-3">29.92 pounds</p>
-        </div>
-    </span>
-
-    <span class="card mt-3 p-6">
-        <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="five" value="1013.2 grams"><p class="mt-3 p-3">1013.2 grams</p>
-        </div>
-    </span>
-
-    <span class="card mt-3 p-6">
-        <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="five" value="14.7 pounds"><p class="mt-3 p-3">14.7 pounds</p>
-        </div>
-    </span>
-
-
-    <span class="card mt-3 p-6">
-        <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="five" value="None of the above" checked><p class="mt-3 p-3">None of the above</p>
+            <input class="form-check-input my-auto" type="radio" name="three" value="soil" checked><p class="mt-3 p-3">soil</p>
         </div>
     </span>
 
@@ -263,64 +201,94 @@ return(true);
 
 <div class="card mt-3 p-5">
     <div class="card-title">
-        Question 6:In a flight profile, what phase is reached when the pilot levels off at the desired altitude. 
+        Question 4:	Movement of cell against concentration gradient is called?
     </div>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="six" value="Decent"><p class="mt-3 p-3">Decent</p>
+            <input class="form-check-input my-auto" type="radio" name="four" value="osmosis"><p class="mt-3 p-3">osmosis</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="six" value="Approach"><p class="mt-3 p-3">Approach</p>
+            <input class="form-check-input my-auto"  type="radio" name="four" value="active transport"><p class="mt-3 p-3">active transport</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="six" value="Departure"><p class="mt-3 p-3">Departure</p>
+            <input class="form-check-input my-auto" type="radio" name="four" value="diffusion"><p class="mt-3 p-3">diffusion</p>
         </div>
     </span>
 
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="six" value="Cruise" checked><p class="mt-3 p-3">Cruise</p>
+            <input class="form-check-input my-auto" type="radio" name="four" value="passive transport" checked><p class="mt-3 p-3">passive transport</p>
+        </div>
+    </span>
+
+</div>
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 5:	Photosynthesis generally takes place in which parts of the plant?
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="five" value="Leaf and other chloroplast bearing parts"><p class="mt-3 p-3">Leaf and other chloroplast bearing parts</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="five" value="stem and leaf"><p class="mt-3 p-3">stem and leaf</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="five" value="Roots and chloroplast bearing parts"><p class="mt-3 p-3">Roots and chloroplast bearing parts</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="five" value="Bark and leaf" checked><p class="mt-3 p-3">Bark and leaf</p>
         </div>
     </span>
 
 </div>
 
-
 <div class="card mt-3 p-5">
     <div class="card-title">
-        Question 7: The VFR weather minimums for class C airspace are... 
+        Question 6:Out of 900 reported species of living gymnosperms, conifers are represented by about 500 species, About 2,50,000 species of angiosperms (flowering plants) have also been reported in the world. The vast and dominant woodlands in Europe, Asia, North America and mountains such as Himalayas are wooded with
     </div>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="seven" value="500 below the clouds"><p class="mt-3 p-3">500 below the clouds</p>
+            <input class="form-check-input my-auto" type="radio" name="six" value="all gymnosperms, except conifers"><p class="mt-3 p-3">all gymnosperms, except conifers</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="seven" value="1000 above the clouds"><p class="mt-3 p-3">1000 above the clouds</p>
+            <input class="form-check-input my-auto"  type="radio" name="six" value="only angiosperms"><p class="mt-3 p-3">only angiosperms</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="seven" value="2000 horizontally from any cloud"><p class="mt-3 p-3">2000' horizontally from any cloud</p>
+            <input class="form-check-input my-auto" type="radio" name="six" value="only conifers"><p class="mt-3 p-3">only conifers</p>
         </div>
     </span>
 
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="seven" value="All of the above" checked><p class="mt-3 p-3">All of the above</p>
+            <input class="form-check-input my-auto" type="radio" name="six" value="angiosperms and all gymnosperms except conifers" checked><p class="mt-3 p-3">angiosperms and all gymnosperms except conifers</p>
         </div>
     </span>
 
@@ -329,31 +297,31 @@ return(true);
 
 <div class="card mt-3 p-5">
     <div class="card-title">
-        Question 8: When approaching a precision runway, the pilot sees 8 stripes at the beginning of the runway. What do these stripes tell the pilot? 
+        Question 7:One of the following is not a function of bones.
     </div>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="eight" value="The runway is 8000 long"><p class="mt-3 p-3">The runway is 8000 long</p>
+            <input class="form-check-input my-auto" type="radio" name="seven" value="Place for muscle attachment"><p class="mt-3 p-3">Place for muscle attachment</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="eight" value="The runway is closed"><p class="mt-3 p-3">The runway is closed</p>
+            <input class="form-check-input my-auto"  type="radio" name="seven" value="protection of vital organs"><p class="mt-3 p-3">protection of vital organs</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="eight" value="These are the threshold marking of a precision runway"><p class="mt-3 p-3">These are the threshold marking of a precision runway</p>
+            <input class="form-check-input my-auto" type="radio" name="seven" value="Secretion of hormones for calcium regulation in blood and bones"><p class="mt-3 p-3">Secretion of hormones for calcium regulation in blood and bones</p>
         </div>
     </span>
 
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="eight" value="A portion of the runway is unusable" checked><p class="mt-3 p-3">A portion of the runway is unusable</p>
+            <input class="form-check-input my-auto" type="radio" name="seven" value="Production of blood corpusules" checked><p class="mt-3 p-3">Production of blood corpusules</p>
         </div>
     </span>
 
@@ -362,31 +330,31 @@ return(true);
 
 <div class="card mt-3 p-5">
     <div class="card-title">
-        Question 9: Which wind direction indicator shows where the wind is from?
-    </div>
+        Question 8:Plants absorb most part of water needed by them through their 
+</div>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="nine" value="Wind Sock"><p class="mt-3 p-3">Wind Sock</p>
+            <input class="form-check-input my-auto" type="radio" name="eight" value="embryonic zone"><p class="mt-3 p-3">embryonic zone</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="nine" value="Tetrahedron"><p class="mt-3 p-3">Tetrahedron</p>
+            <input class="form-check-input my-auto"  type="radio" name="eight" value="growing point"><p class="mt-3 p-3">growing point</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="nine" value="Wind tee"><p class="mt-3 p-3">Wind tee</p>
+            <input class="form-check-input my-auto" type="radio" name="eight" value="root hairs"><p class="mt-3 p-3">root hairs</p>
         </div>
     </span>
 
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="nine" value="Segmented circle" checked><p class="mt-3 p-3">Segmented circle</p>
+            <input class="form-check-input my-auto" type="radio" name="eight" value="zone of elongation" checked><p class="mt-3 p-3">zone of elongation</p>
         </div>
     </span>
 
@@ -395,31 +363,64 @@ return(true);
 
 <div class="card mt-3 p-5">
     <div class="card-title">
-        Question 10: If the airport beacon is flashing one white, one green, one yellow, it is a... 
+        Question 9: Process of cell divison can take place by?
     </div>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="ten" value="Water airport"><p class="mt-3 p-3">Water airport</p>
+            <input class="form-check-input my-auto" type="radio" name="nine" value="heterosis"><p class="mt-3 p-3">heterosis</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">   
-            <input class="form-check-input my-auto"  type="radio" name="ten" value="Civilian airport"><p class="mt-3 p-3">Civilian airport</p>
+            <input class="form-check-input my-auto"  type="radio" name="nine" value="fusion"><p class="mt-3 p-3">fusion</p>
         </div>
     </span>
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="ten" value="Military airport"><p class="mt-3 p-3">Military airport</p>
+            <input class="form-check-input my-auto" type="radio" name="nine" value="mitosis"><p class="mt-3 p-3">mitosis</p>
         </div>
     </span>
 
 
     <span class="card mt-3 p-6">
         <div class="container">
-            <input class="form-check-input my-auto" type="radio" name="ten" value="Helicopter Airport" checked><p class="mt-3 p-3">Helicopter Airport</p>
+            <input class="form-check-input my-auto" type="radio" name="nine" value="None of these" checked><p class="mt-3 p-3">None of these</p>
+        </div>
+    </span>
+
+</div>
+
+
+<div class="card mt-3 p-5">
+    <div class="card-title">
+        Question 10:Plant development is influenced by 
+    </div>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="ten" value="Quality of light only"><p class="mt-3 p-3">Quality of light only</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">   
+            <input class="form-check-input my-auto"  type="radio" name="ten" value="Quality and Quantity of light"><p class="mt-3 p-3">Quality and Quantity of light</p>
+        </div>
+    </span>
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="ten" value="Quality and duration of light"><p class="mt-3 p-3">Quality and duration of light</p>
+        </div>
+    </span>
+
+
+    <span class="card mt-3 p-6">
+        <div class="container">
+            <input class="form-check-input my-auto" type="radio" name="ten" value="Quality,quantity and duration of light" checked><p class="mt-3 p-3">Quality,quantity and duration of light</p>
         </div>
     </span>
 

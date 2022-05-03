@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WAP Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .jumbotron {
+      background-color: rgb(174, 220, 88);
+    }
+
+    .card-body img {
+      width: 50px;
+      height: 50px;
+      
+    }
+    .img:hover{
+      background-color: coral;
+    }
+
+    #button-addon1 {
+      color: #ffc371;
+    }
+
+    i {
+      color: #6a645c;
+    }
+
+    .form-control::placeholder {
+      font-size: 0.95rem;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    .form-control.shadow-0:focus {
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1><b>Electronic Gadget</b></h1>
+      <p><b><i>way of lighting</i></b></p>
+    </div>
+  </div>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="user.html">Registration<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="payment.html">payment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">profile</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            News
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">media </a>
+            <a class="dropdown-item" href="#">digital</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">print</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./AC-Chill-Fest-D-C.webp" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./Samsung-AC-Price-Drop-Banner.webp" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="iPhone-12-CLP-Banner-25-04-2022.webp" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- card 1 -->
+      <div class="col-sm-4 mt-3 mb-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="samsung.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Motorola E40 64 GB, 4 GB RAM, Pink Clay, Mobile Phone</h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="col-sm-4 mt-3 mb-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="samsung.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy A53 5G 128 GB, 6 GB RAM, Light Blue, Mobile Phone
+            </h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="col-sm-4 mt-3 mb-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="iphone.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Apple iPhone 12 64 GB, Black ,Dark Grey 13 pro 64GB </h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="col-sm-4 mt-3 mb-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="frij.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Kelvinator 350 litres 2 Star Double Door Refrigerators, Hairline Silver KRF-A370HSV 
+            </h5>
+            <p class="card-text">
+              </p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div class="col-sm-4 mt-3 mb-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="washing_machine.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Hisense 6.0 Kg Fully-Automatic Front Loading Washing Machine (WFVB6010MS, Silver</h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- card 6 -->
+      <div class="col-sm-4 mt-3 mb-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="ac.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Samsung 1 Ton 5 Star AR12BY5YATA Inverter Split AC, HD Filter, 2 Way Swing, Floral Design,
+            </h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-dark">
+    <div class="container py-5">
+      <div class="row py-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
+          <p class="font-italic text-muted"></p>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+                  class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+                  class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Mobile</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">television</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">smartwatches</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">kitchen appliance</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+          <p class="text-muted mb-4"></p>
+          <div class="p-1 rounded border">
+            <div class="input-group">
+              <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                class="form-control border-0 shadow-0">
+              <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyrights -->
+    <div class="bg-light py-4">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2"><a href="">© 2022 electricgadget All rights reserved.</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
